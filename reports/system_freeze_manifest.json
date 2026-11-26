@@ -1,0 +1,42 @@
+{
+  "backend/models/yolov11_amf.pt": {
+    "sha256": "81693ba01e9a324210db96af86b35d26867bab1ffad694ef892c05fbc8979938",
+    "size_bytes": 5458643,
+    "status": "FROZEN"
+  },
+  "backend/amave/engine.py": {
+    "sha256": "9d6c01ebf21d20f19ee2300ef74bb48366d884eff026917d36ac01610db20eec",
+    "size_bytes": 5680,
+    "status": "FROZEN"
+  },
+  "backend/amave/temporal_verifier.py": {
+    "sha256": "b0a35003973720ac6f8c8f12f6b7db93603271c79d0e3c1279fe087924263e3f",
+    "size_bytes": 11798,
+    "status": "FROZEN"
+  },
+  "backend/amave/confidence_fusion.py": {
+    "sha256": "3f624c4dd9245123611ad5cc36beaa23aa6dbd295ffc2f0e9be4bb1d82d7c946",
+    "size_bytes": 3278,
+    "status": "FROZEN"
+  },
+  "backend/sasa/analyzer.py": {
+    "sha256": "68956b6f6c62121d5a8de1d8e0b19988fa281a8f662bada550d7cbfba8ff8273",
+    "size_bytes": 1845,
+    "status": "FROZEN"
+  },
+  "backend/sede/decision_engine.py": {
+    "sha256": "058bf3c4ae43b62e949a0bb9f93a1e269db48cbbaf89301a7d8f68fa68d0c75d",
+    "size_bytes": 2069,
+    "status": "FROZEN"
+  },
+  "backend/detection/yolov11_amf.py": {
+    "sha256": "f627efbf9c9941e79cd03f95fd45dd26f7259e231aef2cbfa482e66d576fd8c2",
+    "size_bytes": 5955,
+    "status": "FROZEN"
+  },
+  "backend/config.py": {
+    "sha256": "4b48d236756aa773efc5eba0c5e1089ab80b44e9440ccccba7332482e1569dca",
+    "size_bytes": 2655,
+    "status": "FROZEN"
+  }
+}

@@ -1,0 +1,229 @@
+{
+    "audit_yolo": {
+        "trained_weight_path": "D:\\New folder\\r&d\\backend\\models\\yolov11_amf.pt",
+        "actual_weight_file_exists": true,
+        "file_size_bytes": 5442387,
+        "device": "cuda",
+        "cuda_available": true,
+        "gpu_name": "NVIDIA GeForce RTX 2050",
+        "confidence_threshold": 0.2,
+        "iou_threshold": 0.4,
+        "yolo_version": "YOLO11 (Ultralytics unknown)",
+        "model_task": "detect",
+        "class_names": {
+            "0": "Accident"
+        },
+        "num_classes": 1,
+        "num_layers": 320,
+        "dataset_yaml_path": "D:\\New folder\\r&d\\dataset\\prepared\\dataset.yaml",
+        "dataset_yaml_exists": true,
+        "dataset_yaml_content": "path: D:/New folder/r&d/dataset/prepared\ntrain: images/train\nval: images/val\ntest: images/test\n\nnc: 1\nnames:\n  0: Accident"
+    },
+    "dataset_audit": {
+        "total_real_videos": 2027,
+        "real_videos_on_disk": 2027,
+        "annotated_videos_count": 2027,
+        "invalid_coordinate_rows": 0,
+        "bbox_format": "Normalized [x1, y1, x2, y2] -> YOLO [0, center_x, center_y, width, height]",
+        "prepared_train_images": 1680,
+        "prepared_val_images": 348,
+        "prepared_test_images": 400,
+        "prepared_train_accidents": 1260,
+        "prepared_val_accidents": 261,
+        "prepared_test_accidents": 300
+    },
+    "class_mapping": {
+        "dataset_class_id": 0,
+        "dataset_class_name": "Accident",
+        "training_class_id": 0,
+        "training_class_name": "Accident",
+        "model_class_id": 0,
+        "model_class_name": "Accident",
+        "inference_class_id": 0,
+        "inference_label": "Accident",
+        "consistent": true
+    },
+    "frame_level_check": [
+        {
+            "frame": "24IyPsinbH8_00_f60_acc.jpg",
+            "ground_truth_bbox": [
+                0.329,
+                0.592,
+                0.052,
+                0.053
+            ],
+            "num_detections": 1,
+            "max_confidence": 0.1302,
+            "max_iou": 0.0602,
+            "correct": "NO"
+        },
+        {
+            "frame": "24IyPsinbH8_00_f63_acc.jpg",
+            "ground_truth_bbox": [
+                0.329,
+                0.592,
+                0.052,
+                0.053
+            ],
+            "num_detections": 0,
+            "max_confidence": 0.0,
+            "max_iou": 0.0,
+            "correct": "NO"
+        },
+        {
+            "frame": "24IyPsinbH8_00_f66_acc.jpg",
+            "ground_truth_bbox": [
+                0.329,
+                0.592,
+                0.052,
+                0.053
+            ],
+            "num_detections": 0,
+            "max_confidence": 0.0,
+            "max_iou": 0.0,
+            "correct": "NO"
+        },
+        {
+            "frame": "24R72DZBQ5k_00_f14_acc.jpg",
+            "ground_truth_bbox": [
+                0.124,
+                0.587,
+                0.032,
+                0.046
+            ],
+            "num_detections": 0,
+            "max_confidence": 0.0,
+            "max_iou": 0.0,
+            "correct": "NO"
+        },
+        {
+            "frame": "24R72DZBQ5k_00_f17_acc.jpg",
+            "ground_truth_bbox": [
+                0.124,
+                0.587,
+                0.032,
+                0.046
+            ],
+            "num_detections": 0,
+            "max_confidence": 0.0,
+            "max_iou": 0.0,
+            "correct": "NO"
+        },
+        {
+            "frame": "24R72DZBQ5k_00_f20_acc.jpg",
+            "ground_truth_bbox": [
+                0.124,
+                0.587,
+                0.032,
+                0.046
+            ],
+            "num_detections": 0,
+            "max_confidence": 0.0,
+            "max_iou": 0.0,
+            "correct": "NO"
+        },
+        {
+            "frame": "2xzko5Nggkc_00_f34_acc.jpg",
+            "ground_truth_bbox": [
+                0.338,
+                0.841,
+                0.16,
+                0.196
+            ],
+            "num_detections": 2,
+            "max_confidence": 0.1103,
+            "max_iou": 0.1993,
+            "correct": "NO"
+        },
+        {
+            "frame": "2xzko5Nggkc_00_f37_acc.jpg",
+            "ground_truth_bbox": [
+                0.338,
+                0.841,
+                0.16,
+                0.196
+            ],
+            "num_detections": 2,
+            "max_confidence": 0.3129,
+            "max_iou": 0.8786,
+            "correct": "YES"
+        },
+        {
+            "frame": "2xzko5Nggkc_00_f40_acc.jpg",
+            "ground_truth_bbox": [
+                0.338,
+                0.841,
+                0.16,
+                0.196
+            ],
+            "num_detections": 2,
+            "max_confidence": 0.3182,
+            "max_iou": 0.1718,
+            "correct": "NO"
+        },
+        {
+            "frame": "3Xd6PxEvbNk_11_00_f40_acc.jpg",
+            "ground_truth_bbox": [
+                0.797,
+                0.241,
+                0.403,
+                0.239
+            ],
+            "num_detections": 0,
+            "max_confidence": 0.0,
+            "max_iou": 0.0,
+            "correct": "NO"
+        }
+    ],
+    "threshold_diagnosis": {
+        "0.1": {
+            "precision": 0.8019,
+            "recall": 0.636,
+            "f1": 0.7094,
+            "tp": 166,
+            "fp": 41,
+            "fn": 95
+        },
+        "0.2": {
+            "precision": 0.8623,
+            "recall": 0.4559,
+            "f1": 0.5965,
+            "tp": 119,
+            "fp": 19,
+            "fn": 142
+        },
+        "0.3": {
+            "precision": 0.8537,
+            "recall": 0.2682,
+            "f1": 0.4082,
+            "tp": 70,
+            "fp": 12,
+            "fn": 191
+        },
+        "0.4": {
+            "precision": 0.8947,
+            "recall": 0.1954,
+            "f1": 0.3208,
+            "tp": 51,
+            "fp": 6,
+            "fn": 210
+        },
+        "0.5": {
+            "precision": 0.8929,
+            "recall": 0.0958,
+            "f1": 0.173,
+            "tp": 25,
+            "fp": 3,
+            "fn": 236
+        }
+    },
+    "video_trace_summary": {
+        "video_name": "__WFqm4i3vE_00.mp4",
+        "total_video_frames": 383,
+        "sampled_processed_frames": 192,
+        "gt_accident_frame": 109,
+        "frames_with_detections_conf_0_10": 171,
+        "accident_zone_frames_detected": 14,
+        "verdict": "YOLO SEES ACCIDENT EVIDENCE AT LOW CONFIDENCE (conf ~0.11-0.21) BUT FILTERS OUT AT conf >= 0.20 THRESHOLD"
+    }
+}

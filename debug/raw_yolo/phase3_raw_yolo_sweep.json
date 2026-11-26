@@ -1,0 +1,74 @@
+{
+  "video": "D:\\New folder\\r&d\\dataset\\real_videos\\_9tp71S2Gwg_00.mp4",
+  "total_frames": 440,
+  "max_raw_confidence": 0.46903571486473083,
+  "max_raw_frame": 387,
+  "max_raw_box": {
+    "box": [
+      308.46,
+      355.53,
+      391.22,
+      453.99
+    ],
+    "confidence": 0.469,
+    "class_id": 0,
+    "label": "Accident"
+  },
+  "frames_with_any_detection": 440,
+  "sweep": [
+    {
+      "threshold": 0.01,
+      "detection_frames": 440,
+      "total_boxes": 1090,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.05,
+      "detection_frames": 124,
+      "total_boxes": 135,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.1,
+      "detection_frames": 67,
+      "total_boxes": 67,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.15,
+      "detection_frames": 52,
+      "total_boxes": 52,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.2,
+      "detection_frames": 38,
+      "total_boxes": 38,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.25,
+      "detection_frames": 22,
+      "total_boxes": 22,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.3,
+      "detection_frames": 17,
+      "total_boxes": 17,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.4,
+      "detection_frames": 3,
+      "total_boxes": 3,
+      "max_confidence": 0.469
+    },
+    {
+      "threshold": 0.5,
+      "detection_frames": 0,
+      "total_boxes": 0,
+      "max_confidence": 0.0
+    }
+  ]
+}

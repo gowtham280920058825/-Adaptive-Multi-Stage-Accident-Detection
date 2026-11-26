@@ -1,0 +1,269 @@
+{
+    "prediction": "ACCIDENT DETECTED",
+    "detection_confidence": 0.7733,
+    "amave_status": "VERIFIED",
+    "severity": "SEVERE",
+    "emergency_decision": "HIGH-PRIORITY EMERGENCY RECOMMENDATION: Traffic Control & Emergency Medical Notification",
+    "report_id": "REP_1790232448",
+    "timestamp": "2026-09-24 12:17:28",
+    "input_video": "0NixrF6Mt00_0_00.mp4",
+    "video_duration_sec": 3.9,
+    "total_frames_analyzed": 94,
+    "active_model": "YOLO11-AMF",
+    "accident_detected": true,
+    "verified_window_count": 3,
+    "detection_confidence_pct": "77.3%",
+    "amave_verification": {
+        "status": "VERIFIED",
+        "score": 0.7153,
+        "stages": {
+            "detection_confidence": 0.6678,
+            "temporal_persistence": 1.0,
+            "motion_consistency": 0.95,
+            "collision_interaction": 0.15
+        },
+        "reason": "VERIFIED_ACCIDENT: Satisfies multi-stage temporal, motion, and interaction evidence criteria"
+    },
+    "sasa_severity": {
+        "sasa_status": "EXECUTED",
+        "severity": "SEVERE",
+        "severity_score": 0.6075,
+        "features": {
+            "collision_type_score": 0.65,
+            "rollover_score": 0.0,
+            "vehicle_count_score": 1.0,
+            "motion_score": 0.95,
+            "scene_layout_score": 0.7
+        },
+        "available_features": [
+            "vehicle_count",
+            "optical_flow_motion"
+        ],
+        "unavailable_features": [
+            "collision_type",
+            "rollover_flag",
+            "scene_layout"
+        ],
+        "explanation": [
+            "Collision geometry: Metadata unavailable (Default 0.65)",
+            "Rollover status: Metadata unavailable (Default 0.0)",
+            "Vehicle involvement: 17 detected box(es) (Normalized 1.00)",
+            "Kinetic Impact Evidence: Optical flow motion score (0.95)",
+            "Roadway context: Metadata unavailable (Default 0.70)"
+        ]
+    },
+    "sede_emergency_decision": {
+        "alert_id": "ALERT_20260924_121728",
+        "timestamp": "2026-09-24 12:17:28",
+        "video_source": "0NixrF6Mt00_0_00.mp4",
+        "sede_status": "EXECUTED",
+        "emergency_priority": "SEVERE",
+        "priority_score": 0.6506,
+        "recommended_action": "HIGH-PRIORITY EMERGENCY RECOMMENDATION: Traffic Control & Emergency Medical Notification",
+        "description": "Moderate-to-high severity accident confirmed. Priority control room notification and emergency medical response recommended.",
+        "action_steps": [
+            "High-Priority Control Room Operator Alert",
+            "Recommend Emergency Medical Response Notification",
+            "Recommend Police Assistance Advisory"
+        ],
+        "evidence_rationale": [
+            "AMAVE V2 Verified (Score: 0.7153)",
+            "SASA Visual Severity: SEVERE (Score: 0.6075)",
+            "Computed Priority Score: 0.6506"
+        ],
+        "amave_summary": {
+            "status": "VERIFIED_ACCIDENT",
+            "fused_score": 0.7153
+        },
+        "sasa_summary": {
+            "status": "EXECUTED",
+            "severity": "SEVERE",
+            "severity_score": 0.6075
+        },
+        "mode": "Research Decision-Support Prototype Mode (No Automated Real Dispatch)"
+    },
+    "model_metrics": {
+        "precision": 0.3665,
+        "recall": 0.21,
+        "map50": 0.1969,
+        "map50_95": 0.0754,
+        "f1": 0.267,
+        "false_positive_rate": 0.01,
+        "verification_accuracy": 0.2775,
+        "event_level_accuracy": 100.0,
+        "event_level_f1": 100.0,
+        "event_level_fpr": 0.0,
+        "severity_accuracy": null,
+        "severity_disclaimer": "Severity evaluation unavailable because validated severity ground-truth labels are not present in the current dataset.",
+        "event_level_precision": 100.0,
+        "event_level_recall": 100.0
+    },
+    "performance": {
+        "fps": 65.21,
+        "avg_latency_ms": 15.34,
+        "total_processing_time_sec": 1.442
+    },
+    "annotated_video_url": "/results/annotated_videos/annotated_0NixrF6Mt00_0_00.mp4",
+    "frame_trace": [
+        {
+            "sampled_idx": 0,
+            "frame_idx": 0,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 1,
+            "frame_idx": 2,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 2,
+            "frame_idx": 4,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 3,
+            "frame_idx": 6,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 4,
+            "frame_idx": 8,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 5,
+            "frame_idx": 10,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 6,
+            "frame_idx": 12,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 7,
+            "frame_idx": 14,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 8,
+            "frame_idx": 16,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 9,
+            "frame_idx": 18,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 10,
+            "frame_idx": 20,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 11,
+            "frame_idx": 22,
+            "candidates": 0,
+            "max_confidence": 0.0,
+            "amave_score": 0.0,
+            "verified": false
+        },
+        {
+            "sampled_idx": 12,
+            "frame_idx": 24,
+            "candidates": 1,
+            "max_confidence": 0.3369,
+            "amave_score": 0.2315,
+            "verified": false
+        },
+        {
+            "sampled_idx": 13,
+            "frame_idx": 26,
+            "candidates": 1,
+            "max_confidence": 0.6682,
+            "amave_score": 0.3564,
+            "verified": false
+        },
+        {
+            "sampled_idx": 14,
+            "frame_idx": 28,
+            "candidates": 1,
+            "max_confidence": 0.6907,
+            "amave_score": 0.3681,
+            "verified": false
+        },
+        {
+            "sampled_idx": 15,
+            "frame_idx": 30,
+            "candidates": 1,
+            "max_confidence": 0.7733,
+            "amave_score": 0.4296,
+            "verified": false
+        },
+        {
+            "sampled_idx": 16,
+            "frame_idx": 32,
+            "candidates": 1,
+            "max_confidence": 0.7667,
+            "amave_score": 0.4303,
+            "verified": false
+        },
+        {
+            "sampled_idx": 17,
+            "frame_idx": 34,
+            "candidates": 1,
+            "max_confidence": 0.6211,
+            "amave_score": 0.4263,
+            "verified": false
+        },
+        {
+            "sampled_idx": 18,
+            "frame_idx": 36,
+            "candidates": 1,
+            "max_confidence": 0.6333,
+            "amave_score": 0.5522,
+            "verified": true
+        },
+        {
+            "sampled_idx": 19,
+            "frame_idx": 38,
+            "candidates": 1,
+            "max_confidence": 0.6262,
+            "amave_score": 0.454,
+            "verified": false
+        }
+    ]
+}

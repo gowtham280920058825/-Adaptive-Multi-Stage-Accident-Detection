@@ -1,0 +1,193 @@
+{
+  "video_info": {
+    "filename": "_0RDZgCKPGo_00.mp4",
+    "full_path": "D:\\New folder\\r&d\\dataset\\real_videos\\_0RDZgCKPGo_00.mp4",
+    "frame_count": 399,
+    "fps": 14.87,
+    "width": 966,
+    "height": 720,
+    "duration_sec": 26.833
+  },
+  "model_info": {
+    "absolute_checkpoint_path": "D:\\New folder\\r&d\\backend\\models\\yolov11_amf.pt",
+    "file_size_bytes": 5458643,
+    "file_size_mb": 5.206,
+    "model_class_mapping": {
+      "0": "Accident"
+    },
+    "model_type": "DetectionModel",
+    "image_size": 640,
+    "device": "cuda",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 2050",
+    "model_successfully_loaded": "YES"
+  },
+  "max_confidence": 0.41724398732185364,
+  "max_confidence_frame": 227,
+  "threshold_sweep": {
+    "0.05": {
+      "frames_with_det": 290,
+      "total_dets": 401,
+      "max_confidence": 0.4172,
+      "max_frame": 227,
+      "max_box": [
+        734.18,
+        620.46,
+        899.22,
+        719.67
+      ],
+      "class": "Accident"
+    },
+    "0.1": {
+      "frames_with_det": 129,
+      "total_dets": 136,
+      "max_confidence": 0.4172,
+      "max_frame": 227,
+      "max_box": [
+        734.18,
+        620.46,
+        899.22,
+        719.67
+      ],
+      "class": "Accident"
+    },
+    "0.15": {
+      "frames_with_det": 56,
+      "total_dets": 56,
+      "max_confidence": 0.4172,
+      "max_frame": 227,
+      "max_box": [
+        734.18,
+        620.46,
+        899.22,
+        719.67
+      ],
+      "class": "Accident"
+    },
+    "0.2": {
+      "frames_with_det": 33,
+      "total_dets": 33,
+      "max_confidence": 0.4172,
+      "max_frame": 227,
+      "max_box": [
+        734.18,
+        620.46,
+        899.22,
+        719.67
+      ],
+      "class": "Accident"
+    },
+    "0.25": {
+      "frames_with_det": 11,
+      "total_dets": 11,
+      "max_confidence": 0.4172,
+      "max_frame": 227,
+      "max_box": [
+        734.18,
+        620.46,
+        899.22,
+        719.67
+      ],
+      "class": "Accident"
+    },
+    "0.3": {
+      "frames_with_det": 4,
+      "total_dets": 4,
+      "max_confidence": 0.4172,
+      "max_frame": 227,
+      "max_box": [
+        734.18,
+        620.46,
+        899.22,
+        719.67
+      ],
+      "class": "Accident"
+    },
+    "0.4": {
+      "frames_with_det": 1,
+      "total_dets": 1,
+      "max_confidence": 0.4172,
+      "max_frame": 227,
+      "max_box": [
+        734.18,
+        620.46,
+        899.22,
+        719.67
+      ],
+      "class": "Accident"
+    },
+    "0.5": {
+      "frames_with_det": 0,
+      "total_dets": 0,
+      "max_confidence": 0.0,
+      "max_frame": -1,
+      "max_box": null,
+      "class": "N/A"
+    }
+  },
+  "stride_sweep": {
+    "1": {
+      "processed_frames": 399,
+      "detection_frames": 33,
+      "max_confidence": 0.4172,
+      "max_frame": 227
+    },
+    "2": {
+      "processed_frames": 200,
+      "detection_frames": 16,
+      "max_confidence": 0.3143,
+      "max_frame": 174
+    },
+    "3": {
+      "processed_frames": 133,
+      "detection_frames": 11,
+      "max_confidence": 0.3143,
+      "max_frame": 174
+    }
+  },
+  "imgsz_sweep": {
+    "640": {
+      "processed_frames": 200,
+      "det_frames_10": 65,
+      "det_frames_20": 16,
+      "max_confidence": 0.3143197298049927,
+      "max_frame": 174
+    },
+    "960": {
+      "processed_frames": 200,
+      "det_frames_10": 105,
+      "det_frames_20": 63,
+      "max_confidence": 0.5643113851547241,
+      "max_frame": 174
+    },
+    "1280": {
+      "processed_frames": 200,
+      "det_frames_10": 187,
+      "det_frames_20": 121,
+      "max_confidence": 0.7182917594909668,
+      "max_frame": 230
+    }
+  },
+  "diagnostic_images": {
+    "path_a": "D:\\New folder\\r&d\\results\\diagnostic_images\\0rdzg\\diag_A_max_yolo_conf.jpg",
+    "path_b": "D:\\New folder\\r&d\\results\\diagnostic_images\\0rdzg\\diag_B_pre_accident.jpg",
+    "path_c": "D:\\New folder\\r&d\\results\\diagnostic_images\\0rdzg\\diag_C_collision_frame.jpg",
+    "path_d": "D:\\New folder\\r&d\\results\\diagnostic_images\\0rdzg\\diag_D_post_accident.jpg",
+    "peak_frame": 227,
+    "pre_frame": 202,
+    "coll_frame": 227,
+    "post_frame": 252
+  },
+  "peak_amave": {
+    "frame": 174,
+    "fused_score": 0.3743,
+    "stages": {
+      "detection_confidence": 0.3143,
+      "temporal_persistence": 0.2,
+      "motion_consistency": 0.7,
+      "collision_interaction": 0.15
+    },
+    "status": "UNVERIFIED_EVENT",
+    "reason": "UNVERIFIED_EVENT: Normal vehicular flow (no vehicle-vehicle collision overlap or confirmed crash kinematics detected)"
+  }
+}

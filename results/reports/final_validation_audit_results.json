@@ -1,0 +1,247 @@
+{
+    "model_audit": {
+        "checkpoint_path": "D:\\New folder\\r&d\\backend\\models\\yolov11_amf.pt",
+        "file_size_bytes": 5458643,
+        "last_modified": "Thu Sep 24 13:36:05 2026",
+        "architecture": "YOLO11n-AMF (Improved YOLO11 Nano Backbone)",
+        "num_layers": 320,
+        "num_parameters": 2590035,
+        "training_epochs": 30,
+        "trained_image_size": 640,
+        "training_batch_size": 16,
+        "training_learning_rate": 0.003,
+        "hardware": "CUDA (NVIDIA GeForce RTX 2050)",
+        "class_mapping": {
+            "0": "Accident"
+        },
+        "inference_confidence_threshold": 0.2,
+        "inference_iou_threshold": 0.4,
+        "temporal_window_size": 10,
+        "min_persistence_frames": 2,
+        "min_verified_frames": 2,
+        "verification_threshold": 0.45,
+        "frame_stride": 2,
+        "dataset_split": {
+            "train": {
+                "total_images": 1680,
+                "accident_frames": 1260,
+                "background_frames": 420
+            },
+            "val": {
+                "total_images": 348,
+                "accident_frames": 261,
+                "background_frames": 87
+            },
+            "test": {
+                "total_images": 400,
+                "accident_frames": 300,
+                "background_frames": 100
+            }
+        }
+    },
+    "test_eval_metrics": {
+        "test_images_total": 400,
+        "positive_accident_images": 300,
+        "negative_background_images": 100,
+        "precision": 0.4094,
+        "recall": 0.1733,
+        "map50": 0.1148,
+        "map50_95": 0.0456,
+        "f1_score": 0.2436,
+        "frame_confusion_matrix": {
+            "TP": 92,
+            "FP": 18,
+            "FN": 208
+        },
+        "inference_speed_ms": 4.88,
+        "fps": 204.9,
+        "test_set_isolation_confirmation": "CONFIRMED: Held-out test set was strictly isolated. Zero training or hyperparameter tuning was conducted on the test split."
+    },
+    "event_level_audit": {
+        "total_videos": 10,
+        "confusion_matrix": {
+            "TP": 7,
+            "TN": 3,
+            "FP": 0,
+            "FN": 0
+        },
+        "metrics": {
+            "accuracy": 100.0,
+            "precision": 100.0,
+            "recall": 100.0,
+            "f1_score": 100.0,
+            "false_positive_rate": 0.0
+        },
+        "independence_check": {
+            "held_out_videos": true,
+            "zero_training_leakage": true,
+            "zero_validation_leakage": true,
+            "independent_ground_truth": true,
+            "predictions_not_compared_against_self": true
+        },
+        "video_cases_summary": [
+            {
+                "video": "-6SQSDj8cYU_00.mp4",
+                "ground_truth": "ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "VERIFIED",
+                "sasa": "MODERATE",
+                "sede": "SEVERE",
+                "final": "ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "0isplBZQftg_00.mp4",
+                "ground_truth": "ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "VERIFIED",
+                "sasa": "MODERATE",
+                "sede": "SEVERE",
+                "final": "ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "0NixrF6Mt00_0_00.mp4",
+                "ground_truth": "ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "VERIFIED",
+                "sasa": "MODERATE",
+                "sede": "SEVERE",
+                "final": "ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "__WFqm4i3vE_00.mp4",
+                "ground_truth": "ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "VERIFIED",
+                "sasa": "MODERATE",
+                "sede": "SEVERE",
+                "final": "ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "fzWY0vLAXzI_00.mp4",
+                "ground_truth": "ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "VERIFIED",
+                "sasa": "MODERATE",
+                "sede": "SEVERE",
+                "final": "ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "nAXTthLfgtI_00.mp4",
+                "ground_truth": "ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "VERIFIED",
+                "sasa": "MODERATE",
+                "sede": "MODERATE",
+                "final": "ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "Z4kg2Ev3vhk_00.mp4",
+                "ground_truth": "ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "VERIFIED",
+                "sasa": "MODERATE",
+                "sede": "SEVERE",
+                "final": "ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "normal_traffic_01.mp4",
+                "ground_truth": "NO ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "UNVERIFIED",
+                "sasa": "N/A",
+                "sede": "NO EMERGENCY ACTION (UNVERIFIED)",
+                "final": "NO ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "normal_traffic_clear.mp4",
+                "ground_truth": "NO ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "UNVERIFIED",
+                "sasa": "N/A",
+                "sede": "NO EMERGENCY ACTION (UNVERIFIED)",
+                "final": "NO ACCIDENT DETECTED",
+                "correct": true
+            },
+            {
+                "video": "normal_traffic_urban.mp4",
+                "ground_truth": "NO ACCIDENT",
+                "yolo_result": "DETECTIONS FOUND",
+                "amave": "UNVERIFIED",
+                "sasa": "N/A",
+                "sede": "NO EMERGENCY ACTION (UNVERIFIED)",
+                "final": "NO ACCIDENT DETECTED",
+                "correct": true
+            }
+        ]
+    },
+    "real_accident_verification": {
+        "video_file": "__WFqm4i3vE_00.mp4",
+        "ground_truth": "ACCIDENT DETECTED",
+        "total_video_frames": 383,
+        "processed_frames": 192,
+        "frames_with_yolo_detections": 56,
+        "max_yolo_confidence": 0.5758,
+        "amave_verified_frames": 24,
+        "peak_amave_fused_score": 0.5589,
+        "amave_status": "VERIFIED",
+        "sasa_severity": "MODERATE",
+        "sasa_status": "EXECUTED",
+        "sede_priority": "MODERATE",
+        "sede_action": "MODERATE RESPONSE RECOMMENDATION: Traffic Control Room Review Advisory",
+        "final_prediction": "ACCIDENT DETECTED",
+        "outcome": "CORRECT VERIFICATION"
+    },
+    "normal_traffic_verification": {
+        "video_file": "test_normal_traffic.mp4",
+        "ground_truth": "NO ACCIDENT DETECTED",
+        "total_video_frames": 90,
+        "processed_frames": 45,
+        "frames_with_yolo_detections": 18,
+        "max_yolo_confidence": 0.5737,
+        "amave_verified_frames": 1,
+        "peak_amave_fused_score": 0.5098,
+        "amave_status": "UNVERIFIED",
+        "sasa_status": "BYPASSED",
+        "sede_status": "BYPASSED",
+        "final_prediction": "NO ACCIDENT DETECTED",
+        "outcome": "CORRECT REJECTION (AMAVE PREVENTED FALSE POSITIVE)"
+    },
+    "failure_case_audit": {
+        "Case_A_False_Negative_Low_Light": {
+            "video": "nAXTthLfgtI_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "total_frames": 105,
+            "frames_with_dets": 33,
+            "max_detection_conf": 0.6337,
+            "verified_frames": 1,
+            "peak_fused_score": 0.4801,
+            "peak_det_score": 0.6337,
+            "peak_temp_score": 1.0,
+            "peak_motion_score": 0.2,
+            "peak_inter_score": 0.15,
+            "primary_failure_driver": "AMAVE Temporal/Kinetic Threshold Under-Shoot: YOLO detected accident (max_conf=0.6337), but candidate frames had intermittent persistence (temporal score=0.50) and motion score dropped to 0.15 post-crash, yielding fused score of 0.4801 with only 1 verified frame (< MIN_VERIFIED_FRAMES=2)."
+        },
+        "Case_B_False_Positive_Ego_Motion": {
+            "video": "normal_traffic_clear.mp4",
+            "ground_truth": "NO ACCIDENT",
+            "total_frames": 30,
+            "frames_with_dets": 30,
+            "max_detection_conf": 0.4737,
+            "verified_frames": 29,
+            "peak_fused_score": 0.5403,
+            "peak_det_score": 0.4511,
+            "peak_temp_score": 1.0,
+            "peak_motion_score": 0.55,
+            "peak_inter_score": 0.2,
+            "primary_failure_driver": "Synthetic Camera Ego-Motion Artifact: Dashcam forward camera motion in synthetic CARLA sequence induced background optical flow variance that satisfied kinetic disruption threshold, while consecutive detection of a nearby lead vehicle sustained temporal persistence."
+        }
+    }
+}

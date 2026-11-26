@@ -1,0 +1,42 @@
+[
+    {
+        "case_id": "CASE_1_UNVERIFIED",
+        "name": "Unverified Candidate Event",
+        "passed": true,
+        "status": "NOT_EXECUTED",
+        "priority": "N/A",
+        "recommended_action": "NO_ACTION"
+    },
+    {
+        "case_id": "CASE_2_VERIFIED_LOW",
+        "name": "Verified Minor Collision",
+        "passed": true,
+        "status": "EXECUTED",
+        "priority": "LOW",
+        "recommended_action": "LOW PRIORITY RECOMMENDATION: Incident Logging & Continuous Monitoring"
+    },
+    {
+        "case_id": "CASE_3_VERIFIED_MODERATE",
+        "name": "Verified Moderate Intersection Incident",
+        "passed": true,
+        "status": "EXECUTED",
+        "priority": "MODERATE",
+        "recommended_action": "MODERATE RESPONSE RECOMMENDATION: Traffic Control Room Review Advisory"
+    },
+    {
+        "case_id": "CASE_4_VERIFIED_HIGH",
+        "name": "Verified High-Impact Collision",
+        "passed": true,
+        "status": "EXECUTED",
+        "priority": "HIGH",
+        "recommended_action": "HIGH-PRIORITY EMERGENCY RECOMMENDATION: Traffic Control & Emergency Medical Notification"
+    },
+    {
+        "case_id": "CASE_5_VERIFIED_CRITICAL",
+        "name": "Verified Critical Rollover / Pileup",
+        "passed": true,
+        "status": "EXECUTED",
+        "priority": "CRITICAL",
+        "recommended_action": "CRITICAL EMERGENCY RESPONSE RECOMMENDATION: Immediate Ambulance & Police Dispatch Advisory"
+    }
+]

@@ -1,0 +1,72 @@
+{
+    "report_id": "REP_1787330237",
+    "timestamp": "2026-08-21 22:07:17",
+    "input_video": "fzWY0vLAXzI_00.mp4",
+    "video_duration_sec": 8.93,
+    "total_frames_analyzed": 190,
+    "active_model": "YOLO11-AMF",
+    "accident_detected": true,
+    "detection_confidence_pct": "94.2%",
+    "amave_verification": {
+        "status": "VERIFIED",
+        "score_pct": "88.0%",
+        "reason": "Verified Accident: High confidence, persistent temporal evidence & collision overlap",
+        "stages": {
+            "stage1_detection_conf": 0.9415,
+            "stage2_temporal_persistence": 1.0,
+            "stage3_motion_consistency": 0.6,
+            "stage4_vehicle_interaction": 0.85,
+            "stage5_fused_score": 0.88
+        }
+    },
+    "sasa_severity": {
+        "level": "HIGH",
+        "score_pct": "74.8%",
+        "confidence_pct": "92.5%",
+        "contributing_features": [
+            "High-Impact Collision Geometry (0.85)",
+            "Multiple Involved Vehicles (351)",
+            "High-Speed Corridor Context"
+        ]
+    },
+    "sede_emergency_decision": {
+        "recommended_action": "DISPATCH_EMERGENCY_SERVICES",
+        "description": "Request immediate emergency medical & police response.",
+        "action_steps": [
+            "Alert Regional Traffic Operator Control Room",
+            "Request Emergency Medical Response",
+            "Request Police Assistance"
+        ],
+        "alert": {
+            "timestamp": "2026-08-21 22:07:17",
+            "video_source": "fzWY0vLAXzI_00.mp4",
+            "alert_id": "ALERT_20260821_220717",
+            "verification_status": "VERIFIED ACCIDENT",
+            "severity_level": "HIGH",
+            "severity_score_pct": "74.8%",
+            "recommended_action": "DISPATCH_EMERGENCY_SERVICES",
+            "policy_description": "Request immediate emergency medical & police response.",
+            "recommended_action_steps": [
+                "Alert Regional Traffic Operator Control Room",
+                "Request Emergency Medical Response",
+                "Request Police Assistance"
+            ],
+            "evidence_summary": {
+                "amave_score": "88.0%",
+                "contributing_features": [
+                    "High-Impact Collision Geometry (0.85)",
+                    "Multiple Involved Vehicles (351)",
+                    "High-Speed Corridor Context"
+                ],
+                "evidence_frames_count": 15
+            },
+            "mode": "Simulated Research Demonstration Mode (Controlled Dispatch Recommendation)"
+        }
+    },
+    "performance": {
+        "fps": 17.95,
+        "avg_latency_ms": 55.71,
+        "total_processing_time_sec": 10.584
+    },
+    "annotated_video_url": "/results/annotated_videos/annotated_fzWY0vLAXzI_00.mp4"
+}

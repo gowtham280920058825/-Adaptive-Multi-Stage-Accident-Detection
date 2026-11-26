@@ -1,0 +1,41 @@
+{
+    "timestamp": "2026-08-22 00:20:38",
+    "hardware": {
+        "cuda_available": true,
+        "gpu_name": "NVIDIA GeForce RTX 2050",
+        "pytorch_version": "2.5.1+cu121"
+    },
+    "checkpoint": "D:\\New folder\\r&d\\experiments\\base_paper\\best.pt",
+    "test_1_verified_sequence": {
+        "video_name": "JZcTEwl1Od4_00",
+        "total_frames": 6,
+        "overall_status": "VERIFIED_ACCIDENT",
+        "verified_frames_count": 2,
+        "processing_time_sec": 0.66,
+        "annotated_video_file": "D:\\New folder\\r&d\\results\\reports\\live_demo_tests\\live_annotated_JZcTEwl1Od4_00.mp4",
+        "sample_frame_record": {
+            "frame": "JZcTEwl1Od4_00_f155_norm.jpg",
+            "amave_status": "UNVERIFIED_EVENT",
+            "sasa_status": "NOT_EXECUTED",
+            "sasa_severity": "N/A",
+            "sede_status": "NOT_EXECUTED",
+            "emergency_priority": "N/A"
+        }
+    },
+    "test_2_unverified_sequence": {
+        "video_name": "2wUrP2wgXhs_00",
+        "total_frames": 6,
+        "overall_status": "UNVERIFIED_EVENT",
+        "verified_frames_count": 0,
+        "processing_time_sec": 0.19,
+        "annotated_video_file": "D:\\New folder\\r&d\\results\\reports\\live_demo_tests\\live_annotated_2wUrP2wgXhs_00.mp4",
+        "sample_frame_record": {
+            "frame": "2wUrP2wgXhs_00_f12_norm.jpg",
+            "amave_status": "UNVERIFIED_EVENT",
+            "sasa_status": "NOT_EXECUTED",
+            "sasa_severity": "N/A",
+            "sede_status": "NOT_EXECUTED",
+            "emergency_priority": "N/A"
+        }
+    }
+}

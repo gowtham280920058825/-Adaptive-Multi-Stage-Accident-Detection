@@ -1,0 +1,181 @@
+{
+    "stage": "AMAVE_ONLY",
+    "total_test_frames": 54,
+    "false_alert_reduction_pct": 0.0,
+    "correctly_verified_accidents": 3,
+    "rejected_false_events": 25,
+    "ablation_study": {
+        "Config_A_YOLO11_AMF_Only": {
+            "tp": 6,
+            "fp": 2,
+            "fn": 21,
+            "tn": 25,
+            "accuracy": 0.5741,
+            "precision": 0.75,
+            "recall": 0.2222,
+            "f1_score": 0.3429,
+            "false_positive_rate": 0.0741,
+            "avg_time_ms": 37.54
+        },
+        "Config_B_Temp_Persistence": {
+            "tp": 4,
+            "fp": 2,
+            "fn": 23,
+            "tn": 25,
+            "accuracy": 0.537,
+            "precision": 0.6667,
+            "recall": 0.1481,
+            "f1_score": 0.2424,
+            "false_positive_rate": 0.0741,
+            "avg_time_ms": 37.54
+        },
+        "Config_C_Temp_Motion": {
+            "tp": 3,
+            "fp": 1,
+            "fn": 24,
+            "tn": 26,
+            "accuracy": 0.537,
+            "precision": 0.75,
+            "recall": 0.1111,
+            "f1_score": 0.1935,
+            "false_positive_rate": 0.037,
+            "avg_time_ms": 37.54
+        },
+        "Config_D_Temp_Motion_Interaction": {
+            "tp": 3,
+            "fp": 1,
+            "fn": 24,
+            "tn": 26,
+            "accuracy": 0.537,
+            "precision": 0.75,
+            "recall": 0.1111,
+            "f1_score": 0.1935,
+            "false_positive_rate": 0.037,
+            "avg_time_ms": 37.54
+        },
+        "Config_E_Full_AMAVE": {
+            "tp": 3,
+            "fp": 2,
+            "fn": 24,
+            "tn": 25,
+            "accuracy": 0.5185,
+            "precision": 0.6,
+            "recall": 0.1111,
+            "f1_score": 0.1875,
+            "false_positive_rate": 0.0741,
+            "avg_time_ms": 37.54
+        }
+    },
+    "sample_events": [
+        {
+            "image": "2wUrP2wgXhs_00_f12_norm.jpg",
+            "ground_truth": "NORMAL",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f17_norm.jpg",
+            "ground_truth": "NORMAL",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f22_norm.jpg",
+            "ground_truth": "NORMAL",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f57_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f62_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f67_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f101_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "detection_confidence": 0.1312,
+            "temporal_persistence_score": 1.0,
+            "motion_consistency_score": 0.65,
+            "interaction_score": 0.6,
+            "fused_verification_score": 0.5894,
+            "verification_status": "VERIFIED_ACCIDENT",
+            "verified": true
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f106_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f111_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f56_norm.jpg",
+            "ground_truth": "NORMAL",
+            "detection_confidence": 0.0,
+            "temporal_persistence_score": 0.0,
+            "motion_consistency_score": 0.0,
+            "interaction_score": 0.0,
+            "fused_verification_score": 0.0,
+            "verification_status": "UNVERIFIED_EVENT",
+            "verified": false
+        }
+    ]
+}

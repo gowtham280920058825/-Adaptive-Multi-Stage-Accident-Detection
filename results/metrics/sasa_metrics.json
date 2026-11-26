@@ -1,0 +1,240 @@
+{
+    "stage": "SASA_SEVERITY_ESTIMATION",
+    "total_test_frames": 54,
+    "verified_accident_events": 7,
+    "unverified_bypassed_events": 47,
+    "sasa_executed_count": 7,
+    "category_distribution": {
+        "LOW": 0,
+        "MODERATE": 7,
+        "HIGH": 0,
+        "CRITICAL": 0
+    },
+    "score_statistics": {
+        "mean_severity_score": 0.4993,
+        "std_severity_score": 0.0727,
+        "min_severity_score": 0.3725,
+        "max_severity_score": 0.5832
+    },
+    "average_processing_time_ms": 0.38,
+    "ablation_study": {
+        "Config_A_Type_Only": {
+            "category_distribution": {
+                "LOW": 0,
+                "MODERATE": 1,
+                "HIGH": 0,
+                "CRITICAL": 6
+            },
+            "mean_score": 0.8857,
+            "std_score": 0.1705,
+            "avg_latency_ms": 0.08
+        },
+        "Config_B_Type_Rollover": {
+            "category_distribution": {
+                "LOW": 1,
+                "MODERATE": 6,
+                "HIGH": 0,
+                "CRITICAL": 0
+            },
+            "mean_score": 0.4871,
+            "std_score": 0.0938,
+            "avg_latency_ms": 0.15
+        },
+        "Config_C_Type_Rollover_Vehicles": {
+            "category_distribution": {
+                "LOW": 1,
+                "MODERATE": 6,
+                "HIGH": 0,
+                "CRITICAL": 0
+            },
+            "mean_score": 0.4436,
+            "std_score": 0.0836,
+            "avg_latency_ms": 0.23
+        },
+        "Config_D_Type_Rollover_Vehicles_Motion": {
+            "category_distribution": {
+                "LOW": 1,
+                "MODERATE": 6,
+                "HIGH": 0,
+                "CRITICAL": 0
+            },
+            "mean_score": 0.4686,
+            "std_score": 0.0798,
+            "avg_latency_ms": 0.3
+        },
+        "Config_E_Full_SASA": {
+            "category_distribution": {
+                "LOW": 0,
+                "MODERATE": 7,
+                "HIGH": 0,
+                "CRITICAL": 0
+            },
+            "mean_score": 0.4993,
+            "std_score": 0.0727,
+            "avg_latency_ms": 0.38
+        }
+    },
+    "sample_executed_records": [
+        {
+            "video": "eQ8yX8V88l8_00",
+            "frame": "eQ8yX8V88l8_00_f101_acc.jpg",
+            "amave_status": "VERIFIED_ACCIDENT",
+            "sasa_status": "EXECUTED",
+            "severity": "MODERATE",
+            "severity_score": 0.3725,
+            "features": {
+                "collision_type_score": 0.5,
+                "rollover_score": 0.0,
+                "vehicle_count_score": 0.25,
+                "motion_score": 0.65,
+                "scene_layout_score": 0.75
+            },
+            "explanation": [
+                "Collision geometry: SIDESWIPE hazard (0.50)",
+                "Structural Stability: No vehicle rollover",
+                "Vehicle involvement: 1 detected box(es) (Normalized 0.25)",
+                "Kinetic Impact Evidence: Optical flow motion score (0.65)",
+                "Roadway context: Signalized Intersection speed hazard (0.75)"
+            ],
+            "latency_ms": 0.0
+        },
+        {
+            "video": "JZcTEwl1Od4_00",
+            "frame": "JZcTEwl1Od4_00_f200_acc.jpg",
+            "amave_status": "VERIFIED_ACCIDENT",
+            "sasa_status": "EXECUTED",
+            "severity": "MODERATE",
+            "severity_score": 0.5286,
+            "features": {
+                "collision_type_score": 0.85,
+                "rollover_score": 0.0,
+                "vehicle_count_score": 0.5,
+                "motion_score": 0.6572,
+                "scene_layout_score": 0.75
+            },
+            "explanation": [
+                "Collision geometry: T-BONE hazard (0.85)",
+                "Structural Stability: No vehicle rollover",
+                "Vehicle involvement: 2 detected box(es) (Normalized 0.50)",
+                "Kinetic Impact Evidence: Optical flow motion score (0.66)",
+                "Roadway context: Signalized Intersection speed hazard (0.75)"
+            ],
+            "latency_ms": 0.0
+        },
+        {
+            "video": "JZcTEwl1Od4_00",
+            "frame": "JZcTEwl1Od4_00_f205_acc.jpg",
+            "amave_status": "VERIFIED_ACCIDENT",
+            "sasa_status": "EXECUTED",
+            "severity": "MODERATE",
+            "severity_score": 0.4173,
+            "features": {
+                "collision_type_score": 0.85,
+                "rollover_score": 0.0,
+                "vehicle_count_score": 0.25,
+                "motion_score": 0.2487,
+                "scene_layout_score": 0.75
+            },
+            "explanation": [
+                "Collision geometry: T-BONE hazard (0.85)",
+                "Structural Stability: No vehicle rollover",
+                "Vehicle involvement: 1 detected box(es) (Normalized 0.25)",
+                "Kinetic Impact Evidence: Optical flow motion score (0.25)",
+                "Roadway context: Signalized Intersection speed hazard (0.75)"
+            ],
+            "latency_ms": 0.62
+        },
+        {
+            "video": "SBTD7z4A1y8_00",
+            "frame": "SBTD7z4A1y8_00_f0_norm.jpg",
+            "amave_status": "VERIFIED_ACCIDENT",
+            "sasa_status": "EXECUTED",
+            "severity": "MODERATE",
+            "severity_score": 0.5225,
+            "features": {
+                "collision_type_score": 1.0,
+                "rollover_score": 0.0,
+                "vehicle_count_score": 0.25,
+                "motion_score": 0.65,
+                "scene_layout_score": 0.75
+            },
+            "explanation": [
+                "Collision geometry: HEAD-ON hazard (1.00)",
+                "Structural Stability: No vehicle rollover",
+                "Vehicle involvement: 1 detected box(es) (Normalized 0.25)",
+                "Kinetic Impact Evidence: Optical flow motion score (0.65)",
+                "Roadway context: Signalized Intersection speed hazard (0.75)"
+            ],
+            "latency_ms": 0.0
+        },
+        {
+            "video": "SBTD7z4A1y8_00",
+            "frame": "SBTD7z4A1y8_00_f2_norm.jpg",
+            "amave_status": "VERIFIED_ACCIDENT",
+            "sasa_status": "EXECUTED",
+            "severity": "MODERATE",
+            "severity_score": 0.4963,
+            "features": {
+                "collision_type_score": 1.0,
+                "rollover_score": 0.0,
+                "vehicle_count_score": 0.5,
+                "motion_score": 0.142,
+                "scene_layout_score": 0.75
+            },
+            "explanation": [
+                "Collision geometry: HEAD-ON hazard (1.00)",
+                "Structural Stability: No vehicle rollover",
+                "Vehicle involvement: 2 detected box(es) (Normalized 0.50)",
+                "Kinetic Impact Evidence: Optical flow motion score (0.14)",
+                "Roadway context: Signalized Intersection speed hazard (0.75)"
+            ],
+            "latency_ms": 0.56
+        },
+        {
+            "video": "SBTD7z4A1y8_00",
+            "frame": "SBTD7z4A1y8_00_f47_acc.jpg",
+            "amave_status": "VERIFIED_ACCIDENT",
+            "sasa_status": "EXECUTED",
+            "severity": "MODERATE",
+            "severity_score": 0.5832,
+            "features": {
+                "collision_type_score": 1.0,
+                "rollover_score": 0.0,
+                "vehicle_count_score": 0.5,
+                "motion_score": 0.7216,
+                "scene_layout_score": 0.75
+            },
+            "explanation": [
+                "Collision geometry: HEAD-ON hazard (1.00)",
+                "Structural Stability: No vehicle rollover",
+                "Vehicle involvement: 2 detected box(es) (Normalized 0.50)",
+                "Kinetic Impact Evidence: Optical flow motion score (0.72)",
+                "Roadway context: Signalized Intersection speed hazard (0.75)"
+            ],
+            "latency_ms": 0.69
+        },
+        {
+            "video": "SBTD7z4A1y8_00",
+            "frame": "SBTD7z4A1y8_00_f52_acc.jpg",
+            "amave_status": "VERIFIED_ACCIDENT",
+            "sasa_status": "EXECUTED",
+            "severity": "MODERATE",
+            "severity_score": 0.575,
+            "features": {
+                "collision_type_score": 1.0,
+                "rollover_score": 0.0,
+                "vehicle_count_score": 0.25,
+                "motion_score": 1.0,
+                "scene_layout_score": 0.75
+            },
+            "explanation": [
+                "Collision geometry: HEAD-ON hazard (1.00)",
+                "Structural Stability: No vehicle rollover",
+                "Vehicle involvement: 1 detected box(es) (Normalized 0.25)",
+                "Kinetic Impact Evidence: Optical flow motion score (1.00)",
+                "Roadway context: Signalized Intersection speed hazard (0.75)"
+            ],
+            "latency_ms": 0.77
+        }
+    ]
+}

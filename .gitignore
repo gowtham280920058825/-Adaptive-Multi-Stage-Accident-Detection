@@ -1,0 +1,73 @@
+# Python & Test Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments & IDE
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+
+# OS & Temp Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
+
+# Ultralytics auto-generated binary label caches (rebuilt automatically at runtime)
+dataset/prepared/labels/*.cache
+
+# Temporary runtime uploads & duplicate validation run folders
+results/temp_uploads/
+runs/
+
+# ==============================================================================
+# Dataset Exclusions (~19 GB bulk raw/synthetic videos excluded from GitHub)
+# All metadata, prepared YOLO splits, evaluation_videos, and representative
+# real/synthetic samples remain tracked. See dataset/README.md for details.
+# ==============================================================================
+
+# Exclude bulk real videos, keeping 19 representative & test-referenced samples
+dataset/real_videos/*
+!dataset/real_videos/-6SQSDj8cYU_00.mp4
+!dataset/real_videos/0NixrF6Mt00_0_00.mp4
+!dataset/real_videos/0isplBZQftg_00.mp4
+!dataset/real_videos/2wUrP2wgXhs_00.mp4
+!dataset/real_videos/4Bde0lYQ4mg_00.mp4
+!dataset/real_videos/6hJ8mYLUfE8_00.mp4
+!dataset/real_videos/7CO_LqgfiFg_00.mp4
+!dataset/real_videos/CkI203kbHQ8_11_00.mp4
+!dataset/real_videos/SBTD7z4A1y8_00.mp4
+!dataset/real_videos/UcJKeuDYOzc_12_00.mp4
+!dataset/real_videos/XPErIB4xgYg_00.mp4
+!dataset/real_videos/Z4kg2Ev3vhk_00.mp4
+!dataset/real_videos/_0RDZgCKPGo_00.mp4
+!dataset/real_videos/_9tp71S2Gwg_00.mp4
+!dataset/real_videos/__WFqm4i3vE_00.mp4
+!dataset/real_videos/aERiIg9Dts4_00.mp4
+!dataset/real_videos/fzWY0vLAXzI_00.mp4
+!dataset/real_videos/nAXTthLfgtI_00.mp4
+!dataset/real_videos/russia13_00.mp4
+
+# Exclude bulk synthetic videos, keeping 1 representative sample per collision category
+dataset/synthetic_videos/videos/*/*
+!dataset/synthetic_videos/videos/head-on/Town03_head-on_clear_00.mp4
+!dataset/synthetic_videos/videos/rear-end/Town04_rear-end_clear_00.mp4
+!dataset/synthetic_videos/videos/sideswipe/Town05_sideswipe_clear_00.mp4
+!dataset/synthetic_videos/videos/single/Town07_single_clear_00.mp4
+!dataset/synthetic_videos/videos/t-bone/Town03_t-bone_clear_00.mp4
+
+# Exclude bulk synthetic JSON annotations, keeping matching annotations for the 5 samples
+dataset/synthetic_videos/annotations/*
+!dataset/synthetic_videos/annotations/Town03_head-on_clear_00.json
+!dataset/synthetic_videos/annotations/Town04_rear-end_clear_00.json
+!dataset/synthetic_videos/annotations/Town05_sideswipe_clear_00.json
+!dataset/synthetic_videos/annotations/Town07_single_clear_00.json
+!dataset/synthetic_videos/annotations/Town03_t-bone_clear_00.json

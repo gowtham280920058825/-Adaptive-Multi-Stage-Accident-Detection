@@ -1,0 +1,189 @@
+{
+    "timestamp": "Thu Sep 24 13:36:05 2026",
+    "hardware": {
+        "gpu": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 2050"
+    },
+    "dataset_split": {
+        "train_videos": 420,
+        "train_images": 1680,
+        "val_videos": 87,
+        "val_images": 348,
+        "test_videos": 100,
+        "test_images": 400
+    },
+    "TABLE_1_EVENT_LEVEL": {
+        "benchmark_name": "10-Video Empirical Benchmark (Diverse Scenarios)",
+        "total_test_videos": 10,
+        "confusion_matrix": {
+            "TP": 5,
+            "TN": 3,
+            "FP": 0,
+            "FN": 2
+        },
+        "metrics": {
+            "accuracy": 80.0,
+            "precision": 100.0,
+            "recall": 71.43,
+            "f1_score": 83.33,
+            "false_positive_rate": 0.0
+        }
+    },
+    "TABLE_2_YOLO_DETECTION": {
+        "YOLO11_Baseline": {
+            "precision": 0.0215,
+            "recall": 0.0567,
+            "map50": 0.0056,
+            "map50_95": 0.0014,
+            "f1": 0.0312
+        },
+        "YOLO11_AMF": {
+            "precision": 0.4094,
+            "recall": 0.1733,
+            "map50": 0.1148,
+            "map50_95": 0.0456,
+            "f1": 0.2436
+        }
+    },
+    "TABLE_3_MODULE_TEST": [
+        {
+            "video": "-6SQSDj8cYU_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "VERIFIED",
+            "sasa": "MODERATE",
+            "sede": "SEVERE",
+            "final": "ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "0isplBZQftg_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "VERIFIED",
+            "sasa": "MODERATE",
+            "sede": "SEVERE",
+            "final": "ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "0NixrF6Mt00_0_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "VERIFIED",
+            "sasa": "MODERATE",
+            "sede": "SEVERE",
+            "final": "ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "__WFqm4i3vE_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "VERIFIED",
+            "sasa": "MODERATE",
+            "sede": "SEVERE",
+            "final": "ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "fzWY0vLAXzI_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "VERIFIED",
+            "sasa": "MODERATE",
+            "sede": "SEVERE",
+            "final": "ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "nAXTthLfgtI_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "VERIFIED",
+            "sasa": "MODERATE",
+            "sede": "MODERATE",
+            "final": "ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "Z4kg2Ev3vhk_00.mp4",
+            "ground_truth": "ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "VERIFIED",
+            "sasa": "MODERATE",
+            "sede": "SEVERE",
+            "final": "ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "normal_traffic_01.mp4",
+            "ground_truth": "NO ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "UNVERIFIED",
+            "sasa": "N/A",
+            "sede": "NO EMERGENCY ACTION (UNVERIFIED)",
+            "final": "NO ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "normal_traffic_clear.mp4",
+            "ground_truth": "NO ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "UNVERIFIED",
+            "sasa": "N/A",
+            "sede": "NO EMERGENCY ACTION (UNVERIFIED)",
+            "final": "NO ACCIDENT DETECTED",
+            "correct": true
+        },
+        {
+            "video": "normal_traffic_urban.mp4",
+            "ground_truth": "NO ACCIDENT",
+            "yolo_result": "DETECTIONS FOUND",
+            "amave": "UNVERIFIED",
+            "sasa": "N/A",
+            "sede": "NO EMERGENCY ACTION (UNVERIFIED)",
+            "final": "NO ACCIDENT DETECTED",
+            "correct": true
+        }
+    ],
+    "TABLE_4_ABLATION": {
+        "YOLO11_Baseline": {
+            "frame_precision": 0.0215,
+            "frame_recall": 0.0567,
+            "map50": 0.0056,
+            "map50_95": 0.0014,
+            "event_accuracy": "N/A",
+            "false_positive_rate": "N/A"
+        },
+        "YOLO11_AMF": {
+            "frame_precision": 0.4094,
+            "frame_recall": 0.1733,
+            "map50": 0.1148,
+            "map50_95": 0.0456,
+            "event_accuracy": "N/A",
+            "false_positive_rate": "N/A"
+        },
+        "YOLO11_AMF_AMAVE": {
+            "frame_precision": 0.4094,
+            "frame_recall": 0.1733,
+            "map50": 0.1148,
+            "map50_95": 0.0456,
+            "event_accuracy": 100.0,
+            "event_f1": 100.0,
+            "false_positive_rate": 0.0
+        },
+        "Complete_Proposed_Framework": {
+            "frame_precision": 0.4094,
+            "frame_recall": 0.1733,
+            "map50": 0.1148,
+            "map50_95": 0.0456,
+            "event_accuracy": 100.0,
+            "event_f1": 100.0,
+            "false_positive_rate": 0.0,
+            "severity_accuracy": "N/A (No ground truth labels in dataset)",
+            "emergency_dispatch": "Advisory Decision Recommendation Only"
+        }
+    },
+    "severity_disclaimer": "Severity evaluation unavailable because validated severity ground-truth labels are not present in the current dataset."
+}

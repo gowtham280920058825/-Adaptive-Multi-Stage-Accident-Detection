@@ -1,0 +1,21 @@
+{
+  "total_objects": 1260,
+  "native_distribution": {
+    "<16 px": 6,
+    "16-32 px": 81,
+    "32-64 px": 264,
+    "64-128 px": 354,
+    ">128 px": 555
+  },
+  "native_sub_32px_count": 87,
+  "native_sub_32px_pct": 6.9,
+  "resolution_640_distribution": {
+    "<16 px": 27,
+    "16-32 px": 204,
+    "32-64 px": 282,
+    "64-128 px": 348,
+    ">128 px": 399
+  },
+  "resolution_640_sub_32px_count": 231,
+  "resolution_640_sub_32px_pct": 18.33
+}

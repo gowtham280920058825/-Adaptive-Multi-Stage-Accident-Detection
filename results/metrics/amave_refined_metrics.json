@@ -1,0 +1,208 @@
+{
+    "experiment": "AMAVE_V2_REFINED",
+    "best_val_config": {
+        "weights": [
+            0.5,
+            0.2,
+            0.15,
+            0.15
+        ],
+        "threshold": 0.3,
+        "val_precision": 0.6666666666666666,
+        "val_recall": 0.2222222222222222,
+        "val_f1": 0.3333333333333333,
+        "val_tp": 6,
+        "val_fp": 3,
+        "val_fn": 21,
+        "val_tn": 18
+    },
+    "test_false_alert_reduction_pct": 0.0,
+    "amave_v1_summary": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 24,
+        "tn": 25,
+        "accuracy": 0.5185,
+        "precision": 0.6,
+        "recall": 0.1111,
+        "f1_score": 0.1875,
+        "false_positive_rate": 0.0741,
+        "avg_time_ms": 37.54
+    },
+    "amave_v2_test_summary": {
+        "tp": 5,
+        "fp": 2,
+        "fn": 22,
+        "tn": 25,
+        "accuracy": 0.5556,
+        "precision": 0.7143,
+        "recall": 0.1852,
+        "f1_score": 0.2941,
+        "false_positive_rate": 0.0741,
+        "avg_time_ms": 38.97
+    },
+    "ablation_study_v2": {
+        "Config_A_YOLO11_AMF_Only": {
+            "tp": 6,
+            "fp": 2,
+            "fn": 21,
+            "tn": 25,
+            "accuracy": 0.5741,
+            "precision": 0.75,
+            "recall": 0.2222,
+            "f1_score": 0.3429,
+            "false_positive_rate": 0.0741,
+            "avg_time_ms": 38.97
+        },
+        "Config_B_Temp_Persistence": {
+            "tp": 6,
+            "fp": 2,
+            "fn": 21,
+            "tn": 25,
+            "accuracy": 0.5741,
+            "precision": 0.75,
+            "recall": 0.2222,
+            "f1_score": 0.3429,
+            "false_positive_rate": 0.0741,
+            "avg_time_ms": 38.97
+        },
+        "Config_C_Temp_Motion": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 23,
+            "tn": 26,
+            "accuracy": 0.5556,
+            "precision": 0.8,
+            "recall": 0.1481,
+            "f1_score": 0.25,
+            "false_positive_rate": 0.037,
+            "avg_time_ms": 38.97
+        },
+        "Config_D_Temp_Motion_Interaction": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 23,
+            "tn": 26,
+            "accuracy": 0.5556,
+            "precision": 0.8,
+            "recall": 0.1481,
+            "f1_score": 0.25,
+            "false_positive_rate": 0.037,
+            "avg_time_ms": 38.97
+        },
+        "Config_E_Full_AMAVE_V2": {
+            "tp": 5,
+            "fp": 2,
+            "fn": 22,
+            "tn": 25,
+            "accuracy": 0.5556,
+            "precision": 0.7143,
+            "recall": 0.1852,
+            "f1_score": 0.2941,
+            "false_positive_rate": 0.0741,
+            "avg_time_ms": 38.97
+        }
+    },
+    "sample_test_events": [
+        {
+            "image": "2wUrP2wgXhs_00_f12_norm.jpg",
+            "ground_truth": "NORMAL",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f17_norm.jpg",
+            "ground_truth": "NORMAL",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f22_norm.jpg",
+            "ground_truth": "NORMAL",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f57_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f62_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "2wUrP2wgXhs_00_f67_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f101_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "c_det": 0.1312,
+            "s_pers": 1.0,
+            "s_motion": 0.65,
+            "s_inter": 0.6,
+            "fused_score_v2": 0.4531,
+            "verification_status": "VERIFIED_ACCIDENT"
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f106_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f111_acc.jpg",
+            "ground_truth": "ACCIDENT",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        },
+        {
+            "image": "eQ8yX8V88l8_00_f56_norm.jpg",
+            "ground_truth": "NORMAL",
+            "c_det": 0.0,
+            "s_pers": 0.0,
+            "s_motion": 0.0,
+            "s_inter": 0.0,
+            "fused_score_v2": 0.0,
+            "verification_status": "UNVERIFIED_EVENT"
+        }
+    ]
+}
