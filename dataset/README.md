@@ -19,9 +19,10 @@ This directory contains the dataset metadata, prepared YOLO train/validation/tes
 ### B. Prepared YOLO Dataset Splits (100% Included)
 Located in `dataset/prepared/`, preserving the zero-leakage video-level split structure:
 - `dataset/prepared/dataset.yaml` — Portable YOLO dataset configuration (`nc: 1`, class `0: Accident`).
-- `dataset/prepared/images/train/` & `labels/train/` — **1,680** images + YOLO annotations.
-- `dataset/prepared/images/val/` & `labels/val/` — **348** images + YOLO annotations.
-- `dataset/prepared/images/test/` & `labels/test/` — **412** test images + **400** YOLO `.txt` annotation files.
+- `dataset/prepared/images/train/` & `labels/train/` — **1,680** images + **1,680** YOLO annotations (`1,260` accident, `420` background).
+- `dataset/prepared/images/val/` & `labels/val/` — **348** images + **348** YOLO annotations (`261` accident, `87` background).
+- `dataset/prepared/images/test/` & `labels/test/` — **400** images + **400** YOLO annotations (`300` accident, `100` background), exact 1:1 pairing.
+- `dataset/prepared/unmatched_test_samples/` — **12** leftover accident frames (`2wUrP2wgXhs_00_f42..f67_acc.jpg` and `JZcTEwl1Od4_00_f185..f210_acc.jpg`) from an earlier pilot extraction moved out of `images/test/` so unlabeled accident frames are not miscounted as background negatives during YOLO evaluation.
 - *(Auto-generated `labels/*.cache` binary files are excluded and rebuilt automatically by Ultralytics.)*
 
 ### C. End-to-End Evaluation & Benchmark Videos (100% Included)

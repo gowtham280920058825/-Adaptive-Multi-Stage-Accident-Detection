@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-24 20:27:10",
+  "timestamp": "2026-11-26 11:39:34",
   "model": "YOLO11-AMF",
   "weights": "D:\\New folder\\r&d\\backend\\models\\yolov11_amf.pt",
   "summary": {
@@ -19,112 +19,112 @@
       "video_name": "_9tp71S2Gwg_00.mp4",
       "category": "Clear Morning/Daytime Highway Accident",
       "ground_truth": "ACCIDENT",
-      "yolo_max_confidence": 0.4002,
-      "yolo_detection_frames": 19,
-      "yolo_total_candidates": 19,
-      "amave_score": 0.4442,
+      "yolo_max_confidence": 0.3744,
+      "yolo_detection_frames": 16,
+      "yolo_total_candidates": 16,
+      "amave_score": 0.4223,
       "amave_status": "UNVERIFIED_EVENT",
       "final_prediction": "NORMAL",
       "eval_status": "FALSE_NEGATIVE (MISSED)",
       "sasa_severity": "N/A",
       "sede_action": "NO_ACTION",
-      "elapsed_sec": 7.37
+      "elapsed_sec": 19.24
     },
     {
       "video_name": "__WFqm4i3vE_00.mp4",
       "category": "High-Speed Highway Collision",
       "ground_truth": "ACCIDENT",
-      "yolo_max_confidence": 0.5758,
-      "yolo_detection_frames": 56,
-      "yolo_total_candidates": 62,
-      "amave_score": 0.6339,
+      "yolo_max_confidence": 0.5857,
+      "yolo_detection_frames": 59,
+      "yolo_total_candidates": 66,
+      "amave_score": 0.6475,
       "amave_status": "VERIFIED",
       "final_prediction": "ACCIDENT",
       "eval_status": "TRUE_POSITIVE (CORRECT)",
       "sasa_severity": "MODERATE",
       "sede_action": "HIGH-PRIORITY EMERGENCY RECOMMENDATION: Traffic Control & Emergency Medical Notification",
-      "elapsed_sec": 6.49
+      "elapsed_sec": 11.87
     },
     {
       "video_name": "_0RDZgCKPGo_00.mp4",
       "category": "Night CCTV Highway Accident",
       "ground_truth": "ACCIDENT",
-      "yolo_max_confidence": 0.3143,
-      "yolo_detection_frames": 16,
-      "yolo_total_candidates": 16,
-      "amave_score": 0.3743,
+      "yolo_max_confidence": 0.3149,
+      "yolo_detection_frames": 17,
+      "yolo_total_candidates": 17,
+      "amave_score": 0.3745,
       "amave_status": "UNVERIFIED_EVENT",
       "final_prediction": "NORMAL",
       "eval_status": "FALSE_NEGATIVE (MISSED)",
       "sasa_severity": "N/A",
       "sede_action": "NO_ACTION",
-      "elapsed_sec": 4.72
+      "elapsed_sec": 10.34
     },
     {
       "video_name": "0NixrF6Mt00_0_00.mp4",
       "category": "Urban Intersection Crash",
       "ground_truth": "ACCIDENT",
-      "yolo_max_confidence": 0.8436,
-      "yolo_detection_frames": 15,
-      "yolo_total_candidates": 15,
-      "amave_score": 0.6428,
+      "yolo_max_confidence": 0.843,
+      "yolo_detection_frames": 14,
+      "yolo_total_candidates": 14,
+      "amave_score": 0.6229,
       "amave_status": "VERIFIED",
       "final_prediction": "ACCIDENT",
       "eval_status": "TRUE_POSITIVE (CORRECT)",
       "sasa_severity": "MODERATE",
       "sede_action": "HIGH-PRIORITY EMERGENCY RECOMMENDATION: Traffic Control & Emergency Medical Notification",
-      "elapsed_sec": 1.33
+      "elapsed_sec": 2.47
     },
     {
       "video_name": "-6SQSDj8cYU_00.mp4",
       "category": "Signalized Intersection T-Bone",
       "ground_truth": "ACCIDENT",
-      "yolo_max_confidence": 0.723,
+      "yolo_max_confidence": 0.7186,
       "yolo_detection_frames": 154,
-      "yolo_total_candidates": 183,
-      "amave_score": 0.7706,
+      "yolo_total_candidates": 186,
+      "amave_score": 0.7707,
       "amave_status": "VERIFIED",
       "final_prediction": "ACCIDENT",
       "eval_status": "TRUE_POSITIVE (CORRECT)",
       "sasa_severity": "MODERATE",
       "sede_action": "HIGH-PRIORITY EMERGENCY RECOMMENDATION: Traffic Control & Emergency Medical Notification",
-      "elapsed_sec": 7.79
+      "elapsed_sec": 13.01
     },
     {
       "video_name": "Z4kg2Ev3vhk_00.mp4",
       "category": "Night Highway Rear-End",
       "ground_truth": "ACCIDENT",
-      "yolo_max_confidence": 0.7049,
-      "yolo_detection_frames": 44,
-      "yolo_total_candidates": 48,
-      "amave_score": 0.5838,
+      "yolo_max_confidence": 0.6853,
+      "yolo_detection_frames": 43,
+      "yolo_total_candidates": 47,
+      "amave_score": 0.5584,
       "amave_status": "VERIFIED",
       "final_prediction": "ACCIDENT",
       "eval_status": "TRUE_POSITIVE (CORRECT)",
       "sasa_severity": "MODERATE",
       "sede_action": "HIGH-PRIORITY EMERGENCY RECOMMENDATION: Traffic Control & Emergency Medical Notification",
-      "elapsed_sec": 6.49
+      "elapsed_sec": 11.9
     },
     {
       "video_name": "nAXTthLfgtI_00.mp4",
       "category": "Low-Light Multi-Vehicle Collision",
       "ground_truth": "ACCIDENT",
-      "yolo_max_confidence": 0.6337,
+      "yolo_max_confidence": 0.6338,
       "yolo_detection_frames": 33,
       "yolo_total_candidates": 35,
-      "amave_score": 0.5422,
+      "amave_score": 0.5424,
       "amave_status": "VERIFIED",
       "final_prediction": "ACCIDENT",
       "eval_status": "TRUE_POSITIVE (CORRECT)",
       "sasa_severity": "MODERATE",
       "sede_action": "MODERATE RESPONSE RECOMMENDATION: Traffic Control Room Review Advisory",
-      "elapsed_sec": 2.76
+      "elapsed_sec": 5.64
     },
     {
       "video_name": "normal_traffic_clear.mp4",
       "category": "Normal Traffic Daytime Flow",
       "ground_truth": "NORMAL",
-      "yolo_max_confidence": 0.4737,
+      "yolo_max_confidence": 0.4738,
       "yolo_detection_frames": 30,
       "yolo_total_candidates": 35,
       "amave_score": 0.2497,
@@ -133,13 +133,13 @@
       "eval_status": "TRUE_NEGATIVE (CORRECT)",
       "sasa_severity": "N/A",
       "sede_action": "NO_ACTION",
-      "elapsed_sec": 0.91
+      "elapsed_sec": 1.55
     },
     {
       "video_name": "normal_traffic_urban.mp4",
       "category": "Normal Urban Arterial Traffic",
       "ground_truth": "NORMAL",
-      "yolo_max_confidence": 0.4213,
+      "yolo_max_confidence": 0.4203,
       "yolo_detection_frames": 4,
       "yolo_total_candidates": 4,
       "amave_score": 0.3433,
@@ -148,13 +148,13 @@
       "eval_status": "TRUE_NEGATIVE (CORRECT)",
       "sasa_severity": "N/A",
       "sede_action": "NO_ACTION",
-      "elapsed_sec": 1.22
+      "elapsed_sec": 2.37
     },
     {
       "video_name": "test_normal_traffic.mp4",
       "category": "Normal Highway Surveillance",
       "ground_truth": "NORMAL",
-      "yolo_max_confidence": 0.5737,
+      "yolo_max_confidence": 0.5736,
       "yolo_detection_frames": 18,
       "yolo_total_candidates": 18,
       "amave_score": 0.5098,
@@ -163,7 +163,7 @@
       "eval_status": "TRUE_NEGATIVE (CORRECT)",
       "sasa_severity": "N/A",
       "sede_action": "NO_ACTION",
-      "elapsed_sec": 1.19
+      "elapsed_sec": 2.19
     }
   ]
 }

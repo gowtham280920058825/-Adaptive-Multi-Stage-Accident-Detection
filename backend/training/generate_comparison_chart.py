@@ -1,9 +1,12 @@
 import os
 import shutil
+from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.gridspec import GridSpec
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Set style & typography
 plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica']
@@ -251,9 +254,8 @@ def create_overall_comparison_figure():
 
     # Save to target paths
     save_paths = [
-        r"d:\New folder\r&d\project_output_screenshots\overall_performance_comparison.png",
-        r"d:\New folder\r&d\results\plots\overall_performance_comparison.png",
-        r"C:\Users\Admin\.gemini\antigravity-ide\brain\9ca4a1ff-f4ce-43df-90c9-74071654ae4b\overall_performance_comparison.png"
+        str(BASE_DIR / "project_output_screenshots" / "overall_performance_comparison.png"),
+        str(BASE_DIR / "results" / "plots" / "overall_performance_comparison.png"),
     ]
 
     for sp in save_paths:
@@ -338,9 +340,8 @@ def create_paper_figure_variant():
     ax2.legend(loc='lower right', framealpha=0.95, fontsize=8.5, edgecolor=BORDER_COLOR)
 
     paper_save_paths = [
-        r"d:\New folder\r&d\project_output_screenshots\paper_figure_performance_comparison.png",
-        r"d:\New folder\r&d\results\plots\paper_figure_performance_comparison.png",
-        r"C:\Users\Admin\.gemini\antigravity-ide\brain\9ca4a1ff-f4ce-43df-90c9-74071654ae4b\paper_figure_performance_comparison.png"
+        str(BASE_DIR / "project_output_screenshots" / "paper_figure_performance_comparison.png"),
+        str(BASE_DIR / "results" / "plots" / "paper_figure_performance_comparison.png"),
     ]
     for sp in paper_save_paths:
         os.makedirs(os.path.dirname(sp), exist_ok=True)

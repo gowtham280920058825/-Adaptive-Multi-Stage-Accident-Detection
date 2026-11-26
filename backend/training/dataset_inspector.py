@@ -107,9 +107,10 @@ def generate_dataset_report(stats: dict, samples: list):
     out_dir.mkdir(parents=True, exist_ok=True)
     report_file = out_dir / "DATASET_ANALYSIS.md"
 
+    dataset_rel = DATASET_RAW_DIR.relative_to(BASE_DIR).as_posix()
     md_content = f"""# DATASET ANALYSIS & VERIFICATION REPORT
 
-**Dataset Location**: `d:\\New folder\\dataset`  
+**Dataset Location**: `{dataset_rel}/`  
 **Total Real Videos**: {stats['total_real_video_files']}  
 **Total Real Metadata Records**: {stats['total_real_csv_entries']}  
 **Total Synthetic Metadata Records**: {stats['total_synth_csv_entries']}  

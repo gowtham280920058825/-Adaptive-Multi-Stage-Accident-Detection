@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentReport = null;
     let activeStageNum = 1;
     let activeMode = "live"; // "live" | "research"
+    let activeDeviceLabel = "CPU (Fallback)";
 
     // Mode Toggle Elements
     const btnModeLive = document.getElementById("btnModeLive");
@@ -200,12 +201,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 const data = await res.json();
                 valServerStatus.textContent = "ONLINE";
                 if (data.gpu && data.gpu.device) {
-                    valGpuName.textContent = data.gpu.device;
-                    lblCanvasMeta.textContent = `FRAME: #0025 │ FPS: 15.0 │ DEVICE: ${data.gpu.device}`;
+                    activeDeviceLabel = data.gpu.device;
+                    valGpuName.textContent = activeDeviceLabel;
+                    lblCanvasMeta.textContent = `FRAME: -- │ FPS: 15.0 │ DEVICE: ${activeDeviceLabel}`;
                 }
             }
         } catch (e) {
-            valServerStatus.textContent = "ONLINE (LOCAL)";
+            valServerStatus.textContent = "OFFLINE";
         }
     }
 
@@ -366,15 +368,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const amaveData = data.amave_verification || {};
         const amaveStatus = amaveData.status || "UNVERIFIED_EVENT";
         const isVerified = (amaveStatus === "VERIFIED_ACCIDENT" || amaveStatus === "VERIFIED");
-        const fusedScore = amaveData.score || 0.0;
+        const fusedScore = amaveData.score ?? 0.0;
 
         txtAmaveResultTitle.textContent = isVerified ? "VERIFIED ACCIDENT EVENT" : "UNVERIFIED EVENT (REJECTED)";
         txtAmaveResultTitle.style.color = isVerified ? "var(--accent-green)" : "var(--accent-red)";
-        txtAmaveFusedScore.textContent = `Fused Verification Score ($S_{fused}$): ${Number(fusedScore).toFixed(4)}`;
+        txtAmaveFusedScore.innerHTML = `Fused Verification Score (S<sub>fused</sub>): ${Number(fusedScore).toFixed(4)}`;
 
         const v3VerifiedWindows = document.getElementById("v3VerifiedWindows");
         if (v3VerifiedWindows) {
-            v3VerifiedWindows.textContent = `${data.verified_window_count || 0} Window(s) (min 2 required)`;
+            v3VerifiedWindows.textContent = `${data.verified_window_count ?? 0} Window(s) (min 2 required)`;
             v3VerifiedWindows.style.color = isVerified ? "var(--accent-green)" : "var(--accent-amber)";
         }
 
@@ -382,10 +384,10 @@ document.addEventListener("DOMContentLoaded", () => {
         osdAmaveBadge.className = isVerified ? "osd-badge ver" : "osd-badge";
 
         const stages = amaveData.stages || {};
-        updateScoreBar("fillCdet", "valCdet", stages.detection_confidence || 0.15);
-        updateScoreBar("fillSpers", "valSpers", stages.temporal_persistence || 0.80);
-        updateScoreBar("fillSmotion", "valSmotion", stages.motion_consistency || 0.65);
-        updateScoreBar("fillSinter", "valSinter", stages.collision_interaction || 0.60);
+        updateScoreBar("fillCdet", "valCdet", stages.detection_confidence ?? 0.0);
+        updateScoreBar("fillSpers", "valSpers", stages.temporal_persistence ?? 0.0);
+        updateScoreBar("fillSmotion", "valSmotion", stages.motion_consistency ?? 0.0);
+        updateScoreBar("fillSinter", "valSinter", stages.collision_interaction ?? 0.0);
 
         txtAmaveReasoning.textContent = isVerified ?
             "Temporal persistence & Farneback optical flow motion confirmed genuine collision kinetics." :
@@ -423,11 +425,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const sasaData = data.sasa_severity || {};
         const sasaSev = sasaData.severity || "MODERATE";
-        const sasaScore = sasaData.severity_score !== undefined ? sasaData.severity_score : 0.4993;
+        const sasaScore = (sasaData.severity_score !== undefined && sasaData.severity_score !== null) ? sasaData.severity_score : 0.0;
 
         txtSasaSeverity.textContent = sasaSev;
         txtSasaSeverity.style.color = getSeverityColor(sasaSev);
-        txtSasaScore.textContent = `Visual Severity Index ($S_{sasa}$): ${Number(sasaScore).toFixed(4)}`;
+        txtSasaScore.innerHTML = `Visual Severity Index (S<sub>sasa</sub>): ${Number(sasaScore).toFixed(4)}`;
 
         listSasaFeatures.innerHTML = "";
         const features = sasaData.explanation || ["Collision visual scene evidence evaluated"];
@@ -466,9 +468,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         listSedeSteps.innerHTML = "";
         const steps = sedeData.action_steps || ["Notify control room operator", "Queue video stream for verification"];
-        steps.forEach(step => {
+        steps.forEach((step, idx) => {
             const li = document.createElement("li");
-            li.textContent = `1. ${step}`;
+            li.textContent = `${idx + 1}. ${step}`;
             listSedeSteps.appendChild(li);
         });
 
@@ -532,9 +534,7 @@ document.addEventListener("DOMContentLoaded", () => {
             fSedeVal.textContent = data.emergency_decision || (isVerified ? (data.sede_emergency_decision ? data.sede_emergency_decision.recommended_action : "Emergency Response Recommendation") : "NO EMERGENCY ACTION (UNVERIFIED)");
         }
 
-        const procTime = (data.performance && data.performance.total_processing_time_sec) ?
-            data.performance.total_processing_time_sec :
-            (data.performance && data.performance.processing_time_sec ? data.performance.processing_time_sec : "3.35");
+        const procTime = data.performance?.total_processing_time_sec ?? data.performance?.processing_time_sec ?? "--";
         if (fProcTimeVal) fProcTimeVal.textContent = `${procTime} sec`;
 
         // Render Model Performance (Test Set Evaluation Metrics ONLY - Separated from Detection Conf)
@@ -632,8 +632,8 @@ document.addEventListener("DOMContentLoaded", () => {
             thumb.addEventListener("click", () => {
                 document.querySelectorAll(".thumb-node").forEach(t => t.classList.remove("active"));
                 thumb.classList.add("active");
-                osdMetaLine.textContent = `SEQ: #${frameNumStr} │ CONF: ${data.detection_confidence_pct || '37.3%'}`;
-                lblCanvasMeta.textContent = `FRAME: #${frameNumStr} │ FPS: 15.0 │ DEVICE: CUDA:0`;
+                osdMetaLine.textContent = `SEQ: #${frameNumStr} │ CONF: ${data.detection_confidence_pct ?? '0.0%'}`;
+                lblCanvasMeta.textContent = `FRAME: #${frameNumStr} │ FPS: 15.0 │ DEVICE: ${activeDeviceLabel}`;
             });
 
             trackFrameThumbnails.appendChild(thumb);

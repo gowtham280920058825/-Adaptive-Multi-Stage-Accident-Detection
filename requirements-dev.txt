@@ -1,0 +1,10 @@
+# Development & Testing Dependencies
+# Installs runtime dependencies plus unit/API testing tools.
+# For CUDA GPU PyTorch support, install PyTorch from the official CUDA wheel index first
+# (see README.md for exact CUDA installation commands).
+
+-r backend/requirements.txt
+pytest>=7.4.0
+httpx>=0.25.0
+requests>=2.28.0
+pyyaml>=6.0

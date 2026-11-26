@@ -35,8 +35,8 @@
         <!-- TECHNICAL BADGES -->
         <div class="tech-badges">
             <div class="tech-badge">
-                <span class="badge-lbl">GPU</span>
-                <span class="badge-val" id="valGpuName">RTX 2050</span>
+                <span class="badge-lbl">DEVICE</span>
+                <span class="badge-val" id="valGpuName">DETECTING...</span>
             </div>
             <div class="tech-badge">
                 <span class="badge-lbl">MODEL</span>
@@ -135,7 +135,7 @@
         <section class="evidence-canvas-section">
             <div class="canvas-header-bar">
                 <span class="canvas-tag">EVIDENCE CANVAS</span>
-                <span class="canvas-meta-info" id="lblCanvasMeta">FRAME: -- │ FPS: 15.0 │ DEVICE: CUDA:0</span>
+                <span class="canvas-meta-info" id="lblCanvasMeta">FRAME: -- │ FPS: 15.0 │ DEVICE: DETECTING...</span>
             </div>
 
             <!-- PERSISTENT VIDEO & FRAME OVERLAY DISPLAY -->
@@ -301,7 +301,7 @@
                 <div class="evidence-score-bars">
                     <div class="score-bar-row">
                         <div class="score-bar-meta">
-                            <span>Stage 1: Detection Conf ($C_{det}$)</span>
+                            <span>Stage 1: Detection Conf (C<sub>det</sub>)</span>
                             <span class="mono" id="valCdet">0.0000</span>
                         </div>
                         <div class="score-bar-track"><div class="score-bar-fill" id="fillCdet"></div></div>
@@ -309,7 +309,7 @@
 
                     <div class="score-bar-row">
                         <div class="score-bar-meta">
-                            <span>Stage 2: Temporal Persistence ($S_{pers}$)</span>
+                            <span>Stage 2: Temporal Persistence (S<sub>pers</sub>)</span>
                             <span class="mono" id="valSpers">0.0000</span>
                         </div>
                         <div class="score-bar-track"><div class="score-bar-fill" id="fillSpers"></div></div>
@@ -317,7 +317,7 @@
 
                     <div class="score-bar-row">
                         <div class="score-bar-meta">
-                            <span>Stage 3: Motion Consistency ($S_{motion}$)</span>
+                            <span>Stage 3: Motion Consistency (S<sub>motion</sub>)</span>
                             <span class="mono" id="valSmotion">0.0000</span>
                         </div>
                         <div class="score-bar-track"><div class="score-bar-fill" id="fillSmotion"></div></div>
@@ -325,7 +325,7 @@
 
                     <div class="score-bar-row">
                         <div class="score-bar-meta">
-                            <span>Stage 4: Collision Interaction ($S_{inter}$)</span>
+                            <span>Stage 4: Collision Interaction (S<sub>inter</sub>)</span>
                             <span class="mono" id="valSinter">0.0000</span>
                         </div>
                         <div class="score-bar-track"><div class="score-bar-fill" id="fillSinter"></div></div>
@@ -352,7 +352,7 @@
                 <div class="result-banner-box" id="boxSasaResultBanner">
                     <span class="result-lbl">ESTIMATED VISUAL SEVERITY LEVEL</span>
                     <h4 class="result-title" id="txtSasaSeverity">MODERATE</h4>
-                    <span class="result-sub" id="txtSasaScore">Index Score ($S_{sasa}$): 0.4993</span>
+                    <span class="result-sub" id="txtSasaScore">Index Score (S<sub>sasa</sub>): --</span>
                 </div>
 
                 <div class="feature-evidence-block">
@@ -508,7 +508,7 @@
 
                     <div class="research-metric-box">
                         <span class="box-tag">C. VISUAL SEVERITY ESTIMATION (SASA)</span>
-                        <div class="mini-table-row"><span>Mean Index Score ($S_{sasa}$):</span> <span class="mono">0.4993 (Std Dev: 0.0727)</span></div>
+                        <div class="mini-table-row"><span>Mean Index Score (S<sub>sasa</sub>):</span> <span class="mono">0.4993 (Std Dev: 0.0727)</span></div>
                         <div class="mini-table-row"><span>Severity Breakdown:</span> <span class="mono">LOW: 0 │ MODERATE: 7 │ HIGH: 0</span></div>
                     </div>
 

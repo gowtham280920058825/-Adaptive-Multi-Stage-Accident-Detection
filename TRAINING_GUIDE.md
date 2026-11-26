@@ -6,7 +6,7 @@ This guide details how to prepare datasets, train baseline and base-paper models
 
 ## 1. Dataset Preparation
 
-The system automatically extracts key frames from `d:\New folder\dataset\real_videos\` based on `metadata-real.csv`.
+The system automatically extracts key frames from `dataset/real_videos/` based on `dataset/metadata-real.csv`.
 
 To prepare or re-generate the dataset in YOLO format:
 ```cmd
